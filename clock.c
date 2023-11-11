@@ -7,11 +7,11 @@ int main() {
     int delay = 100;
 
     // Prompt the user to set the time
-    printf("Set time: \n");
-    scanf("%d%d%d", &hours, &mins, &secs);
+    printf("Set time (HH:MM:SS): \n");
+    scanf("%d:%d:%d", &hours, &mins, &secs);
 
     // Check for invalid input
-    if (hours > 12 || mins > 60 || secs > 60) {
+    if (hours < 1 || hours > 12 || mins < 0 || mins > 59 || secs < 0 || secs > 59) {
         printf("ERROR! Invalid input.\n");
         exit(0);
     }
@@ -41,7 +41,7 @@ int main() {
         printf("\n %02d:%02d:%02d", hours, mins, secs);
 
         // Sleep for the specified delay (in milliseconds)
-        sleep(delay);
+        usleep(delay * 1000);
 
         // Clear the console screen (assumes a Unix-like system)
         system("clear");
