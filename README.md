@@ -27,3 +27,5 @@ Creat a simple clock in c using for loops. This C code represents a simple digit
     Clear Screen: It uses the system("clear") command to clear the console screen, assuming a Unix-like system. This makes the clock appear to update in place.
 
     Return Statement: The program theoretically ends with return 0, but in practice, it will never reach this point due to the infinite loop, unless externally interrupted.
+
+[Credit Source](https://www.youtube.com/watch?v=72fIizW3N-8)
