@@ -1,5 +1,4 @@
-Absolutely! Here's a Rust-flavored, Adeptus Mechanicus-themed README that recasts your project with the tone of the Omnissiah’s digital cult — merging programming precision with Mechanicum grandeur:
-
+# Chrono-Rite
 ---
 
 # ⌛ *Chrono-Rite: The Rust Codex of Timekeeping* 🛠️
