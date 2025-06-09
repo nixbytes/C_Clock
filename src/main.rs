@@ -35,8 +35,11 @@ fn main() {
     let mut mins: u32 = parts[1].parse().unwrap_or(0);
     let mut secs: u32 = parts[2].parse().unwrap_or(0);
 
+    // validate 12-hour format and valid minute/second range
     if hours < 1 || hours > 12 || mins > 59 || secs > 59 {
         eprintln!("ERROR! Invalid input.");
         return;
     }
+
+    
 }
