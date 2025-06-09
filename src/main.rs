@@ -23,8 +23,11 @@ fn main() {
         .expect("Failed to read input");
 
     let parts: Vec<&str> = input.trim().split(':').collect();
+    if parts.len() != 3{
+        eprintln!("ERRORS! Invalid input format");
+    }
 
-    println!("{}", parts[0]);
-    println!("{}", parts[1]);
-    println!("{}", parts[2]);
+    let mut hours: u32 = parts[0].parse().unwrap_or(0);
+    let mut mins: u32 = parts[1].parse().unwrap_or(0);
+    let mut secs: u32 = parts[2].parse().unwrap_or(0);
 }
