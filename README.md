@@ -102,6 +102,3 @@ The new Mechanicus-compliant Rust version performs the same rites — but now:
 All hail the Omnissiah. May your clocks never desync.
 
 ---
-
-Would you like me to include the full Rust source code as part of this README too, perhaps embedded as a scroll section?
-
