@@ -42,7 +42,7 @@ fn main() {
     }
     
     loop {
-        sec +=1;
+        secs +=1;
         if secs > 59{
             secs = 0;
             mins += 1;
