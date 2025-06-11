@@ -40,6 +40,30 @@ fn main() {
         eprintln!("ERROR! Invalid input.");
         return;
     }
+    
+    loop {
+        sec +=1;
+        if secs > 59{
+            secs = 0;
+            mins += 1;
+        }
 
+        if mins > 59{
+            mins = 0;
+            hours += 1;
+        }
+
+        if hours > 12{
+            hours = 1;  
+        }
+
+        println!("\n Clock :");
+        println!(" {:02}:{:02}:{:02}", hours, mins, secs);
+
+        sleep(Duration::from_millis(100));
+
+        // Clear the screen (Unix-like systems)
+        Command::new("clear").status().unwrap();
+    }
     
 }
