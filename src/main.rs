@@ -40,21 +40,27 @@ fn main() {
         eprintln!("ERROR! Invalid input.");
         return;
     }
-    
+    /*
+    - Loops forever like in C.
+    - Manages time rollover.
+    - Sleeps for 100ms (Duration::from_millis(100)).
+    - Clears the screen by calling the clear command.
+    */
+
     loop {
-        secs +=1;
-        if secs > 59{
+        secs += 1;
+        if secs > 59 {
             secs = 0;
             mins += 1;
         }
 
-        if mins > 59{
+        if mins > 59 {
             mins = 0;
             hours += 1;
         }
 
-        if hours > 12{
-            hours = 1;  
+        if hours > 12 {
+            hours = 1;
         }
 
         println!("\n Clock :");
@@ -65,5 +71,4 @@ fn main() {
         // Clear the screen (Unix-like systems)
         Command::new("clear").status().unwrap();
     }
-    
 }
